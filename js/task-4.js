@@ -8,10 +8,6 @@ function onSubmitForm(event) {
     if(email === "" || password === "") {
         return alert("All form fields must be filled in"); 
     }
-    const trimmedValue = {
-        email: email.trim(),
-        password: password.trim(),
-    };
-    console.log(trimmedValue)
+    console.log({ email: email.trim(), password: password.trim() })
     loginForm.reset();
 }

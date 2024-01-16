@@ -7,14 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     
     const changeColorBtn = document.querySelector(".change-color");
-    const widget = document.querySelector(".widget");
     const spanColor = document.querySelector(".color");
 
-    changeColorBtn.addEventListener("click", clickOnBtn);
-    function clickOnBtn() {
+    changeColorBtn.addEventListener("click", changeBackgroundColor);
+    function changeBackgroundColor() {
         const randomColor = getRandomHexColor();
         document.body.style.backgroundColor = randomColor;
-        widget.style.backgroundColor = randomColor;
         spanColor.textContent = randomColor;
     };
 });

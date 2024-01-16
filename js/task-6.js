@@ -15,7 +15,7 @@ function clickOnBtn() {
   const amount = Number(userInput.value);
   if(amount >= 1 && amount <= 100) {
     createBoxes(amount);
-    userInput.innerHTML = "";
+    userInput.value = "";
   }
 }
 
